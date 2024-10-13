@@ -1,0 +1,55 @@
+body {
+    background-color: #ffffff;
+    text-align: center;
+    overflow: hidden; /* Ascunde bara de derulare */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font deranjant */
+}
+
+h1 {
+    color: red; /* Culoare deranjantă pentru titlu */
+    font-size: 50px;
+    animation: blink 1s infinite; /* Animatie de clipire */
+}
+
+button {
+    padding: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: yellow; /* Culoare deranjantă pentru buton */
+    border: 5px solid green; /* Bordură deranjantă */
+    transition: transform 0.2s; /* Transformație la hover */
+}
+
+button:hover {
+    transform: scale(1.2); /* Mărire la hover */
+}
+
+.popup {
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    background-color: orange; /* Fundal deranjant pentru popup-uri */
+    border: 5px dashed purple; /* Bordură deranjantă pentru popup-uri */
+    font-size: 20px;
+    display: none; /* Ascuns inițial */
+    z-index: 1000; /* Asigură că apare deasupra altor elemente */
+}
+
+/* Animatie de clipire pentru titlu */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Stil pentru reclame deranjante */
+.ad {
+    position: fixed;
+    width: 300px;
+    height: 150px;
+    background-color: pink; /* Fundal deranjant pentru reclame */
+    border: 3px solid blue; /* Bordură deranjantă */
+    font-size: 24px;
+    display: none; /* Ascuns inițial */
+    z-index: 1000; /* Asigură că apare deasupra altor elemente */
+}
